@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media only screen and (max-width: 768px) {
+  /*-------------------------------------------------------------------------------------
+スマホ用レイアウト（768px以下スクリーン）
+----------------------------------------------------------------------------------------*/
+
+  /*--------------------------------------------------
+共通設定(スマホ)
+-----------------------------------------------------*/
+
+  /*body全体の初期スタイル調整*/
+  body {
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+
+  /*--------------------------------------------------
+    見出しタグ設定（スマホ）
+    -----------------------------------------------------*/
+  h2 {
+    margin: 0.5em 0em;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /*--------------------------------------------------
+    全体レイアウト／背景設定（スマホ）
+    -----------------------------------------------------*/
+  /*全体エリア（全体背景を設定するにはここ）*/
+  .main {
+    background-color: #fff;
+    overflow: hidden;
+  }
+  /*記事(ボディ)エリア*/
+  .article {
+    background-color: #fff;
+    font-size: 1.3em; /*=13px*/
+  }
+  /*記事(ボディ)エリアの行間*/
+  .article p {
+    line-height: 1.5;
+  }
+  /*カラム全体の幅を変更する*/
+  .article,
+  .top_image_in {
+    width: 100%;
+    margin: 0 auto; /*真ん中に要素を置きたいときに使う*/
+  }
+
+  /*--------------------------------------------------
+    ファーストビュー設定
+    -----------------------------------------------------*/
+  .top_image {
+    background-image: none;
+  }
+  .top_image_in img {
+    width: 100%;
+  }
+  /*--------------------------------------------------
+    sectionの設定
+    -----------------------------------------------------*/
+  .section_02 {
+    background-image: url(../images/sec02_bg.jpg);
+    padding: 1.5em;
+  }
+
+  .sec02_bg {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 0.5em;
+  }
+
+  .section_03 {
+    padding: 0 1.5em 2em;
+  }
+
+  .section_04 {
+    background-color: #fffef0;
+    padding: 1em 1.5em 2em;
+  }
+
+  .section_05 {
+    background-color: #ffebcd;
+    padding: 1em 1.5em 2em;
+  }
+
+  .voice_1,
+  .voice_2,
+  .voice_3 {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 0.5em;
+    margin-bottom: 2em;
+  }
+
+  /*--------------------------------------------------
+    CTAエリア
+    -----------------------------------------------------*/
+  .cta_btn {
+    text-align: center;
+  }
+
+  .cta_btn:hover {
+    opacity: 0.7;
+  }
+
+  /*--------------------------------------------------
+    フッター部分
+    -----------------------------------------------------*/
+  .footer {
+    background-color: #f39530;
+    padding: 2em 0em;
+    line-height: 2em;
+    text-align: center;
+    font-size: 1.2em;
+    color: #fff;
+  }
+  .footer a {
+    color: #fff;
+  }
+}

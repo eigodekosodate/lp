@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/* CSS Document */
+/*-------------------------------------------------------------------------------------
+PC用レイアウト（768px以上スクリーン）
+----------------------------------------------------------------------------------------*/
+/*--------------------------------------------------
+共通設定(PC)
+-----------------------------------------------------*/
+/*body全体の初期スタイル調整*/
+body {
+  font-size: 62.5%;
+  font-family: YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo,
+    "sans-serif";
+  font-weight: normal;
+  color: #465157;
+}
+/*リンク文字の設定*/
+a {
+  text-decoration: underline;
+}
+a:link,
+a:visited {
+  color: #39f;
+}
+a:hover,
+a:active {
+  color: #f60;
+}
+/*ブラウザのCSSをリセット*/
+p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/*セクションエリアの共通設定*/
+section {
+  clear: both;
+  overflow: auto;
+}
+
+/*画像の共通設定*/
+img {
+  display: block;
+  margin: auto;
+}
+/*--------------------------------------------------
+見出しタグ設定（PC）
+-----------------------------------------------------*/
+h2 {
+  margin: 0.5em 0em;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*--------------------------------------------------
+全体レイアウト／背景設定（PC）
+-----------------------------------------------------*/
+/*全体エリア（全体背景を設定するにはここ）*/
+.main {
+  background-image: url(../images/main_bg.jpg);
+  background-repeat: no-repeat; /* 背景を繰り返さない */
+  background-position: 50% 50%; /* 背景画像の位置は画面中央 */
+  background-attachment: fixed; /* 背景画像を固定する */
+  background-size: cover;
+  overflow: hidden;
+}
+/*記事(ボディ)エリア*/
+.article {
+  background-color: #fff;
+  font-size: 1.6em; /*=16px*/
+}
+/*記事(ボディ)エリアの行間*/
+.article p {
+  line-height: 1.6;
+}
+/*カラム全体の幅を変更する*/
+.article,
+.top_image_in {
+  width: 700px;
+  margin: 0 auto; /*真ん中に要素を置きたいときに使う*/
+}
+
+/*--------------------------------------------------
+sectionの設定
+-----------------------------------------------------*/
+
+.section_02 {
+  background-image: url(../images/sec02_bg.jpg);
+  padding: 2.5em;
+}
+
+.sec02_bg {
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 0.5em;
+}
+
+.section_03 {
+  padding: 0 3em 3em;
+}
+
+.section_04 {
+  background-color: #fffef0;
+  padding: 1em 3em 3em;
+}
+
+.section_05 {
+  background-color: #ffebcd;
+  padding: 1em 3em 3em;
+}
+
+.voice_1,
+.voice_2,
+.voice_3 {
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 0.5em;
+  margin-bottom: 2em;
+}
+
+/*--------------------------------------------------
+CTAエリア
+-----------------------------------------------------*/
+.cta_btn {
+  text-align: center;
+}
+
+.cta_btn:hover {
+  opacity: 0.7;
+}
+
+/*--------------------------------------------------
+フッター部分
+-----------------------------------------------------*/
+.footer {
+  background-color: #f39530;
+  padding: 3em 0em;
+  line-height: 2em;
+  text-align: center;
+  font-size: 1.4em;
+  color: #fff;
+}
+.footer a {
+  color: #fff;
+}
